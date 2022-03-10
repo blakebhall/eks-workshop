@@ -13,8 +13,15 @@ draft: false
 
 ### Setting up Sample EKS Cluster
 
-#### EKSCTL
-test
+#### eksctl
+Information taken from [EKS Done Right – From Control Plane To Worker Nodes](https://spot.io/blog/eks-done-right-from-control-plane-to-worker-nodes/)
+
+1. Ensure you have eksctl installed
+```bash
+eksctl version
+```
+
+ 
 
 #### Terraform
 terraform test
