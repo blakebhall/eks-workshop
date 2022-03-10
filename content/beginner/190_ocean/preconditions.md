@@ -1,18 +1,23 @@
 ---
 title: "Pre-Conditions"
 date: 2022-03-10T00:00:00-00:00
-weight: 14
+weight: 9
 draft: false
 ---
 
-### Keeping Scale-Up Proactive
-One of the key features of the Ocean Autoscaler, is the ability to maintain a dynamic buffer of spare capacity called [Headroom](https://docs.spot.io/ocean/features/headroom). The buffer is algorithmically tailored to meet the actual requirements of the incoming containerized workloads which enables immediate pod scheduling. This is perfect for workloads that make use of Horizontal Pod Autoscaler, and helps prevent pending pods which scale scale-out of worker nodes a proactive process, instead of the reactive nature of Kubernetes Cluster-Autoscaler.
+### General Preconditions for Running this Lab
 
-Headroom is configurable via the Ocean Overview Page Under "Resource Allocation" -> "Configure":
-<img src="/images/ocean/overview-headroom.png" alt="Customize Headroom"/>
+1. Account with AWS
+2. Account with [Spot.io](https://console.spotinst.com/spt/auth/signUp?utm_campaign=eskworkshop&utm_source=eksworkshop)
+3. 
 
-The Headroom can be configured Automatically, or Manually. The automatic option would derive the size and number of headroom units from the most common pods in the cluster. The total percentage of the cluster capacity (in terms of CPU and Memory) that will be reserved for Headroom, is configurable. The default value, recommended for most use cases is 5%.
+### Setting up Sample EKS Cluster
 
-The manual option allows you to tailor the headroom units to your own specification, but note that the defined headroom capacity will end up being static (as opposed to the automatic configuration, which scales with the cluster).
+#### EKSCTL
+test
 
-<img src="/images/ocean/overview-headroom-modal.png" alt="Configure Automatic Headroom" />
+#### Terraform
+terraform test
+
+#### Cloudformation
+cloudformation
