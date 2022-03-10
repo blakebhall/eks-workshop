@@ -13,6 +13,8 @@ Before we get started there are a few accounts that are required to make this wo
 2. Account with [Spot.io](https://console.spotinst.com/spt/auth/signUp?utm_campaign=eskworkshop&utm_source=eksworkshop)
 
 ### Setting up Sample EKS Cluster
+For this lab we will need an EKS Cluster setup; keep in mind that it can take upwards of 20 minutes 
+for AWS to spin up an EKS Cluster
 
 #### eksctl
 Information taken from [EKS Done Right – From Control Plane To Worker Nodes](https://spot.io/blog/eks-done-right-from-control-plane-to-worker-nodes/)
@@ -28,6 +30,7 @@ echo $AWS_ACCESS_KEY_ID
 echo $AWS_SECRET_ACCESS_KEY
 ```
 Keep in mind that these credentials are for your account, if they are not set you can run this command to set them:
+
 
 For your Access Key:
 ```bash
